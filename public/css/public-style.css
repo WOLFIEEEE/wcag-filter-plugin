@@ -1,0 +1,156 @@
+/* General Styling */
+.wcag-filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Filter Buttons Container */
+.filter-buttons-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Download Button Container */
+.download-button-container {
+    text-align: right;
+}
+
+.download-button-container button {
+    text-transform: uppercase;
+    border: 1px solid #cbcbcb;
+    background: #F6F6F6;
+    color: #1a1a1a;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-family: 'Archivo', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    letter-spacing: 0.45px !important;
+}
+.dropdown button:hover,
+.dropdown button:focus,
+.download-button-container button:hover,
+.download-button-container button:focus {
+    border: 1px solid #000000 !important;
+    color: white !important;
+}
+
+/* Dropdown Styling */
+.dropdown button {
+    background: #ffffff;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border: 1px solid grey;
+    outline: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    font-family: 'Archivo', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    letter-spacing: 0.45px !important;
+}
+
+.dropdown button:hover {
+    border: 1px solid #000000;
+    color: #1a1a1a;
+}
+
+.dropdown-toggle::after {
+    content: "▼";
+    padding-left: 0.5em;
+}
+
+.dropdown-toggle[aria-expanded="true"]::after {
+    content: "▲";
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    color: #2641B1;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dropdown-menu--active {
+    display: block;
+    margin-left: auto;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: darkgreen;
+}
+
+.dropdown-menu li label {
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+}
+
+/* Table Styling */
+#wcagTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+}
+
+#wcagTable th,
+#wcagTable td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+#wcagTable th {
+    background-color: #2C3845;
+    color: white;
+    font-weight: bold;
+}
+
+#wcagTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Team Roles Column */
+#wcagTable tbody td.team-role .role-span {
+    background: #F4F5F6;
+    border: 1px solid #DFE3E6;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    display: inline-block;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-roles-column {
+    width: 15%;
+}
